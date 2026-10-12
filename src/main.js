@@ -1,5 +1,7 @@
 import './style.css';
 import './reference.css';
+import './motion.css';
+import { initMotion } from './motion.js';
 document.querySelector('#year').textContent = new Date().getFullYear();
 const plot = document.querySelector('.plot');
 for (let i = 0; i < 50; i++) {
@@ -10,3 +12,5 @@ for (let i = 0; i < 50; i++) {
   dot.className = group ? 'dot light' : 'dot';
   plot.append(dot);
 }
+
+initMotion();
